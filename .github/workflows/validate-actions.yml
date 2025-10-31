@@ -22,8 +22,7 @@ jobs:
       - name: Validate YAML files
         uses: GrantBirki/json-yaml-validate@v3
         with:
-          comment: true     # Adds a PR comment if invalid
-          include: ".github/workflows/my-workflow.yml"
-          exclude: "**/*.yaml **/*.yml"
           base_dir: "."     # Validate all YAML files in the repo
+          files: ".github/workflows/test.yml"
+
 

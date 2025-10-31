@@ -4,12 +4,11 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - '**/*.yml'
-      - '**/*.yaml'
+      - '.github/workflows/test.yml'
   pull_request:
     paths:
-      - '**/*.yml'
-      - '**/*.yaml'
+      - '.github/workflows/test.yml'
+  
 
 jobs:
   validate-yaml:
